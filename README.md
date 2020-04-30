@@ -54,4 +54,37 @@ SSH的主要特性:
 （4）授权：用户访问控制
 Forwarding or tunneling to encrypt other TCP/IP-based sessions 可以通过SSH为Telnet、FTP等提供通信安全保障，支持三种类型的Forwarding操作：Port Forwarding；X Forwarding；Agent Forwarding
 
+## 大数据
+### 1.Hadoop
+Hadoop的优点
+
+1、Hadoop具有按位存储和处理数据能力的高可靠性。
+
+2、Hadoop通过可用的计算机集群分配数据，完成存储和计算任务，这些集群可以方便地扩展到数以千计的节点中，具有高扩展性。
+
+3、Hadoop能够在节点之间进行动态地移动数据，并保证各个节点的动态平衡，处理速度非常快，具有高效性。
+
+4、Hadoop能够自动保存数据的多个副本，并且能够自动将失败的任务重新分配，具有高容错性。
+
+Hadoop的缺点
+
+1、Hadoop不适用于低延迟数据访问。
+
+2、Hadoop不能高效存储大量小文件。
+
+3、Hadoop不支持多用户写入并任意修改文件。
+
+#### 1.HDFS
+HDFS（Hadoop Distributed File System），作为Google File System（GFS）的实现，是Hadoop项目的核心子项目，是分布式计算中数据存储管理的基础，是基于流数据模式访问和处理超大文件的需求而开发的，可以运行于廉价的商用服务器上。它所具有的高容错、高可靠性、高可扩展性、高获得性、高吞吐率等特征为海量数据提供了不怕故障的存储，为超大数据集（Large Data Set）的应用处理带来了很多便利。
+HDFS特点：
+高容错性、可构建在廉价机器上
+适合批处理
+适合大数据处理
+流式文件访问
+HDFS局限：
+不支持低延迟访问
+不适合小文件存储
+不支持并发写入
+不支持修改
+
 
